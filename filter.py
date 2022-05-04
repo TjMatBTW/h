@@ -9,8 +9,6 @@ class FilterCog(commands.Cog, name = "Filter"):
 
     def __init__(self, bot):
         self.bot = bot
-        self.channel = 835359268432773133
-        #self.sync_filter.start()
         
     async def filter_message(self,message):
         async with aiosqlite.connect('filter.db') as connection:
